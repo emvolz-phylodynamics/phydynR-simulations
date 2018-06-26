@@ -1,6 +1,6 @@
 # phydynR simulations to compare likelihood approximations 
 
-This simulation experiment is derived from the one (described here)[https://github.com/emvolz/PhyDyn-simulations]. 
+This simulation experiment is derived from the one [described here](https://github.com/emvolz/PhyDyn-simulations). 
 Please see that page before proceeding. 
 
 The model has been made more complex and the parameters more challenging to estimate by decreasing the duration of the first stage of infection (1 year). 
@@ -52,7 +52,7 @@ M['chron2', 'chron']  <- 'agerate * chron2' #aging from young to old
 
 Requirements: 
 * Python 2 with _matplotlib_
-* R with the testing branch of the _phydynR_ package: [](https://github.com/emvolz/phydynR.r0.1.2)
+* R with the testing branch of the _phydynR_ package: [https://github.com/emvolz/phydynR.r0.1.2](https://github.com/emvolz/phydynR.r0.1.2)
 
 1. The simulated data can be generated in parallel by running the script `python sim0.py`. Revise the `NP` parameter to set the appropriate number of cores to use on your computer.
 2. Parameters can be re-estimated by maximum likelihood using the R script: `Rscript mltest.R sim0`
@@ -65,8 +65,8 @@ Note that both steps (1) and (2) will take a long time (about 12 hours on 40 cpu
 ## Results 
 
 Estimates are shown using two different likelihood approximations
-1. The likelihood described in the supplement of this paper: [](https://doi.org/10.1093/ve/vex014)
-2. The likelihood described in this paper: [](https://www.biorxiv.org/content/early/2018/04/10/268052)
+1. The likelihood described in the supplement of this paper: [https://doi.org/10.1093/ve/vex014](https://doi.org/10.1093/ve/vex014)
+2. The likelihood described in this paper: [https://www.biorxiv.org/content/early/2018/04/10/268052](https://www.biorxiv.org/content/early/2018/04/10/268052)
 Note there is additionally a 'fast' approximate likelihood described in this paper, but we have not included it in this comparison 
 
 The 2nd is about 80% slower than the 1st in these simulations. 
